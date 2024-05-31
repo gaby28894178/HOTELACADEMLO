@@ -1,0 +1,9 @@
+.hoteles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+
+}
