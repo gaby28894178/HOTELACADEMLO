@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import  {useEffect}  from 'react'
+import './style/HotelIdPage.css'
 
 const HotelldPage = () => {
 
@@ -16,7 +17,7 @@ useEffect(()=>{
 
  return (
 
-   <section>
+   <section className='info-section'>
     <h2>{hotel?.name}</h2>
     <div>
       <i></i>
@@ -35,7 +36,7 @@ useEffect(()=>{
     </div>
   <div>
     <address>
-      {hotel?.address}
+      {hotel && hotel?.address}
     </address>
   </div>
   </section>
