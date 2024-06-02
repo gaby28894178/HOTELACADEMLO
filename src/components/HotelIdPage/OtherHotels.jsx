@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import useFetch from '../../hooks/useFetch'
-import { useDispatch } from 'react-redux'
+import HotelCard from '../HomePage/HotelCard'
+
+
 
 const OtherHotels = ({ city }) => {
 
@@ -19,6 +21,16 @@ console.log(hotelsCity)
     <section>
         <h3>Hther Hotels in <span>{city?.country}</span></h3>
         <div>
+            {
+                hotelsCity?.map(hotel=>(
+                    <HotelCard
+                    key={hotel.id}
+                    hotel={hotel}
+                    
+                    />
+
+                ))
+            }
 
         </div>
     </section>
