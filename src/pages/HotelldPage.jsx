@@ -3,6 +3,7 @@ import useFetch from '../hooks/useFetch'
 import  {useEffect}  from 'react'
 import './style/HotelIdPage.css'
 import OtherHotels from '../components/HotelIdPage/OtherHotels'
+import MapHotel from '../components/HotelIdPage/MapHotel'
 
 const HotelldPage = () => {
 
@@ -31,6 +32,20 @@ useEffect(()=>{
     </div>
     <div>
       <img src={hotel?.images[0].url} />
+      {
+        hotel &&(
+
+          <MapHotel
+          lat={hotel?.lat}
+          lon={hotel?.lon}
+          />
+
+
+        )
+
+
+
+      }
     </div>
     <div>
       {hotel?.city.name} / {hotel?.city.country}
@@ -43,6 +58,7 @@ useEffect(()=>{
   <p>{hotel?.description}</p>
   <OtherHotels
   city={hotel?.city}
+  id={id}
   />
   </section>
 

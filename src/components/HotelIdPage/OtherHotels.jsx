@@ -4,7 +4,7 @@ import HotelCard from '../HomePage/HotelCard'
 
 
 
-const OtherHotels = ({ city }) => {
+const OtherHotels = ({ city, id }) => {
 
  const [hotelsCity, getHotelsCity] =   useFetch()
 
@@ -15,14 +15,14 @@ const OtherHotels = ({ city }) => {
     }
 
  },[city?.id])
-console.log(hotelsCity)
+
 
   return (
     <section>
         <h3>Hther Hotels in <span>{city?.country}</span></h3>
         <div>
             {
-                hotelsCity?.map(hotel=>(
+                hotelsCity?.filter(hotel=>hotel.id!==Number(id) ).map(hotel=>(
                     <HotelCard
                     key={hotel.id}
                     hotel={hotel}
