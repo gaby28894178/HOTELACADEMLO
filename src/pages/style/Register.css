@@ -1,0 +1,68 @@
+.register-article{
+
+    
+    width: 50%;
+    margin: 10.8em  0em;
+    padding: 0.2em;
+    border-radius: 0.4em;
+}
+
+.register-form{
+    background-color: rgb(241, 227, 227);
+    margin: -0.1em;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    width: 100%;
+
+
+}
+.register-avatar{
+    font-size: 5em;
+}
+label, input {
+    display: block;
+    width: 90%;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 0.38em;
+    border-radius: 0.3em;
+}
+select,button{
+    display: block;
+    margin: 0.1em;
+    margin-bottom: 0.2em;
+    padding: 0.5em;
+    width: 12em;
+    padding-bottom: 1em;
+    border-color:  red;
+}
+button{
+    margin-bottom: 2em;
+    position: relative;
+    left: 1.5em;
+    top: -0.5em;
+    width: 85%;
+    background-color: rgba(105, 164, 24, 0.378);
+}
+select{
+    width: 95%;
+    background-color: rgba(105, 164, 24, 0.378);
+
+}
+
+input{
+    color: rgb(61, 61, 60);
+    border:1PX SOLID  red;
+    height: 2.5em;
+    margin-bottom: -1em;
+    background-color: rgba(105, 164, 24, 0.378);
+
+
+}
+
+.addusers{
+    font-size: 2.0em;
+    display: flex;
+    justify-content: center;
+    color: red;
+}
