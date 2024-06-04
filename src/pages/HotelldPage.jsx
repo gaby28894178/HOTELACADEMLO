@@ -4,6 +4,7 @@ import  {useEffect}  from 'react'
 import './style/HotelIdPage.css'
 import OtherHotels from '../components/HotelIdPage/OtherHotels'
 import MapHotel from '../components/HotelIdPage/MapHotel'
+import FormReservations from '../components/HotelIdPage/FormReservations'
 
 const HotelldPage = () => {
 
@@ -19,7 +20,7 @@ useEffect(()=>{
 
  return (
 
-   <section className='info-section'>
+   <article className='info-section'>
     <h2>{hotel?.name}</h2>
     <div>
       <i></i>
@@ -56,11 +57,14 @@ useEffect(()=>{
     </address>
   </div>
   <p>{hotel?.description}</p>
+  <section>
+    <FormReservations/>
+  </section>
   <OtherHotels
   city={hotel?.city}
   id={id}
   />
-  </section>
+  </article>
 
   );
 }
