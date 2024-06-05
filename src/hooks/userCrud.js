@@ -19,10 +19,11 @@ const getApi =(url,withToken)=>{
 }
 
 // CREATE
-const posApi =(url,data,withToken)=>{
-    axios.post(url,data,withToken?getConfigToken():{} )
-    .then(res => {setResponse(response ? [...setResponse, res.data]:[res.data])
-
+const posApi =(url, data, withToken)=>{
+    axios.post(url, data, withToken ? getConfigToken():{} )
+    .then(res => {
+        console.log(res.data)
+        setResponse(response ? [...response, res.data]:[res.data])
 
     })
     .catch(err => console.log(err))

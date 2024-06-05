@@ -6,6 +6,8 @@ import HotelldPage from './pages/HotelldPage'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
 import GeneralHeader from './components/shared/GeneralHeader'
+import ReservationPage from './pages/ReservationPage'
+import ProtectedRoutes from './pages/ProtectedRoutes'
 
 
 
@@ -22,6 +24,9 @@ function App() {
         <Route path='/hotel/:id' element={<HotelldPage />}/>
         <Route path='/register' element={<RegisterPage />}/>
         <Route path='/login' element={<LoginPage />}/>
+        <Route element={<ProtectedRoutes/>}>
+              <Route path='/reservation' element={<ReservationPage/>}/>
+        </Route>
 
 
       </Routes>

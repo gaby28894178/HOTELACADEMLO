@@ -58,7 +58,9 @@ useEffect(()=>{
   </div>
   <p>{hotel?.description}</p>
   <section>
-    <FormReservations/>
+    <FormReservations
+    hotelId={id}
+    />
   </section>
   <OtherHotels
   city={hotel?.city}

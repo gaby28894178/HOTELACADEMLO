@@ -1,3 +1,9 @@
-img{
-    width: 140px;
+.info-section{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 12em;
+    background-color: rgb(204, 228, 248);
+    box-sizing: border-box;
+
+
 }

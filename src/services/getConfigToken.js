@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom"
 
-const []  =  useParams()
 
 const getConfigToken = () => {
     return {

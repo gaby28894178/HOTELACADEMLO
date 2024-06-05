@@ -33,19 +33,19 @@ const submit = data =>{
         <h2>Register</h2>
         <div>
             <label><span>first Name</span>
-                <input {...register('firstName')} type="text" />
+                <input className='.input' {...register('firstName')} type="text" />
             </label>
 
             
             <label>
                 <span>Last Name</span>
-                <input  {...register('lastName')} type="text" />
+                <input className='.input'  {...register('lastName')} type="text" />
             </label>
             
             
             <label>
                 <span>Emeil</span>
-                <input  {...register('email')} type="text" /></label>
+                <input className='.input' {...register('email')} type="text" /></label>
             
             
             <label><span>Password</span>

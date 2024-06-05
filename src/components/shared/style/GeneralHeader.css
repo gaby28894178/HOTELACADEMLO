@@ -1,0 +1,76 @@
+
+
+.header-nav{
+    /* background-color: rgba(0, 0, 0, 0.971); */
+   
+    background-image: url('https://ascentiumcapital.com/images/default-source/Blog/blog-header-hotel-reception-desk-with-bell.jpg?sfvrsn=311cdc25_0');
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px 4px gray;
+    position:  fixed;
+    z-index: 22;
+    
+}
+.h1-nav{
+    color: aliceblue;
+    margin-top: -0.1em;
+    margin-left: -3.8em;
+
+
+    
+}
+
+.nav-title{
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    margin: 2em 2em ;
+    padding: 1em 2em;
+    color: rgb(13, 13, 13);
+    text-shadow: 3px 3px 1px  rgb(108, 117, 109);
+    font-size: 42px;
+    
+    
+}
+.nav-title span{
+    color: rgb(250, 0, 0);
+    text-shadow: 3px 3px 1px  rgb(245, 240, 240);
+
+}
+.nav-nav{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.72);
+    padding: 2em;
+    border-radius: 0.5em;
+    
+    
+    
+}
+.nav-ul{
+    /* margin: 2em; */
+    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav-li{
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto 2em;
+    cursor: pointer;
+}
+.nav-Link{
+    color: aliceblue;
+    margin: auto 2em;
+    text-decoration: none;
+    &:hover{
+        color: cadetblue;
+    }
+}

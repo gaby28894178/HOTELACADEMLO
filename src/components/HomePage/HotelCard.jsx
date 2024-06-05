@@ -12,18 +12,18 @@ navigate(`/hotel/${hotel.id}`)
 
 
   return (
-    <article>
-      <header>
-        <img src={hotel?.images?.[0]?.url} alt="Hotel" />
+    <article className='card-article'>
+      <header className='card-header' >
+        <img  className='card-img' src={hotel?.images?.[0]?.url} alt="Hotel" />
       </header>
-      <section>
-        <h3>{hotel?.name}</h3>
-        <div className='div1'>{hotel?.rating}</div>
+      <section className='card-section'>
+        <h3 className='card-name' >{hotel?.name}</h3>
+        <div className='div1'><span>EL Puntaje es.. </span> {hotel?.rating} </div>
         <div className='div2'>{hotel?.city?.name}, {hotel?.city?.country}</div>
-        <div className='div3'>{hotel?.price}</div>
+        <div className='div3'><span>Precio:</span> <span>Usd  </span>$ {hotel?.price} </div>
       </section>
-      <footer>
-        <button onClick={navigateHotelid} >See more...</button>
+      <footer className='footer'>
+        <button className='button' onClick={navigateHotelid} >See more...</button>
       </footer>
     </article>
   );
