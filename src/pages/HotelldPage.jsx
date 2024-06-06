@@ -22,46 +22,39 @@ useEffect(()=>{
  return (
 
    <article className='info-section'>
+    
     <h2>{hotel?.name}</h2>
-    <div >
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <span></span>
-    </div>
-    <div>
-      {/* <img src={hotel?.images[0].url} />
-       */}
-       <SliderImg 
+    <div    className='con'>
+       <div   className='con1'>
+       <SliderImg  className="sl"
         hotel={hotel}
-       />
-      {
-        hotel &&(
+        />
+        </div>
+      <div>
 
+      {/* {
+        hotel &&(
+          
           <MapHotel
           lat={hotel?.lat}
           lon={hotel?.lon}
           />
-
-
+          
+          
         )
-
-
-
-      }
+       
+      } */}
+      </div>
     </div>
-    <div>
+    <div className='con2'>
       {hotel?.city.name} / {hotel?.city.country}
     </div>
-  <div>
-    <address>
+  <div >
+    <address >
       {hotel?.address}
     </address>
   </div>
-  <p>{hotel?.description}</p>
+  <p className='p'>{hotel?.description}</p>
   <section>
     <FormReservations
     hotelId={id}

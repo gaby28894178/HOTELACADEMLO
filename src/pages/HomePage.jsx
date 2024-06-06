@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getHotelsThink} from '../store/slices/products.slice';
 import HotelCard from '../components/HomePage/HotelCard';
 import './style/HomePage.css' 
+import FiltradoPage from '../components/shared/FiltradoPage';
+// import FiltradoPage from './FiltradoPage';
 // import HotelCard from './components/HomePage/HotelCard'
 
 const HomePage = () => {
@@ -17,6 +19,8 @@ const HomePage = () => {
 
   return (
     <div className='hoteles'>
+    
+
       {
       products?.map(hotel => (
         <HotelCard

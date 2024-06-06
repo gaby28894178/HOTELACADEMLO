@@ -1,0 +1,54 @@
+
+ .filtradoformulario{
+    background-color: rgb(213, 213, 213);
+     width: 19em;
+     position: absolute;
+     top: 39em;
+     left: -17.1em;
+     border-radius: 0.5em;
+     margin-top: -0.2em;
+     padding: 1em;
+     box-sizing: border-box;
+     box-shadow: 1px 1px 1px 4px gray;
+     color: rgb(2, 2, 2);
+     font-size: 12px;
+     opacity: 1;
+     transition: opacity 2s ease-in-out, left 1s ease-in-out; 
+ 
+     &:hover{
+         opacity: 1;
+         transform: scale(1.05);
+         box-shadow: 1px 1px 1px 4px rgb(232, 2, 2);
+         color: rgb(2, 2, 2);
+         font-size: 12px;
+         opacity: 1;
+         transition: opacity 2s ease-in-out, left 1s ease-in-out; 
+         left: 0.8em;
+     }
+
+ 
+ }
+ .filtradoformulario input{
+     width: 100%;
+     padding: 0.4em;
+     border-radius: 0.5em;
+     margin-top: 0.2em;
+     margin-bottom: 0.2em;
+     font-size: 14px;
+     margin-left: -2em;
+     display: block;
+     
+ }
+ .filtradoformulario span{
+     font-size: 14px;
+     margin-left: -2em;
+     margin-top: 0.2em;
+     margin-bottom: 0.2em;
+     display: block;
+     color: rgb(2, 2, 2);
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     
+ }

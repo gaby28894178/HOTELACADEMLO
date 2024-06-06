@@ -26,12 +26,12 @@ const submit = (data) =>{
     <span><h1>Reservation</h1></span>
     <h3> If You want book, please giv me your¡</h3>
     <label>
-    <span></span>
+    <span>INICIO </span>
     <input {...register('checkIn')} type="date" />
     </label>
     
     <label>
-    <span></span>
+    <span>FIN </span>
     <input {...register('checkOut')}  type="date" /></label>
     <button>Resere a Roon</button>
    </form>

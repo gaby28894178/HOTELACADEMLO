@@ -1,5 +1,6 @@
 /* Card container */
 .card-article {
+   
     width: 20%;
     font-size: 12px;
     padding: 0.5em;
@@ -28,6 +29,7 @@
     text-align: center; /* Centrar texto */
     text-transform: lowercase;
     font-size: 15px;
+    
 }
 
 .div1 {

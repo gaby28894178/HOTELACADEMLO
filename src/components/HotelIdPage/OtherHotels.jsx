@@ -18,7 +18,7 @@ const OtherHotels = ({ city, id }) => {
 
 
   return (
-    <section>
+    <section className='' >
         <h3>Hther Hotels in <span>{city?.country}</span></h3>
         <div>
             {

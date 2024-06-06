@@ -1,11 +1,5 @@
-.container{
+container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
- 
 
-}
-
-.slider-onten-card{
-    display: flex;
 }

@@ -8,6 +8,8 @@ import LoginPage from './pages/LoginPage'
 import GeneralHeader from './components/shared/GeneralHeader'
 import ReservationPage from './pages/ReservationPage'
 import ProtectedRoutes from './pages/ProtectedRoutes'
+import FiltradoPage from './components/shared/FiltradoPage'
+
 
 
 
@@ -17,8 +19,12 @@ import ProtectedRoutes from './pages/ProtectedRoutes'
 function App() {
 
   return (
+    <div>
+
     <div className='container'>
       <GeneralHeader/>
+
+   
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/hotel/:id' element={<HotelldPage />}/>
@@ -27,10 +33,10 @@ function App() {
         <Route element={<ProtectedRoutes/>}>
               <Route path='/reservation' element={<ReservationPage/>}/>
         </Route>
-
-
       </Routes>
 
+      </div>
+      <FiltradoPage/>
 
 
 
