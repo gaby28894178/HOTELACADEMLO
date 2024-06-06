@@ -24,6 +24,7 @@
          opacity: 1;
          transition: opacity 2s ease-in-out, left 1s ease-in-out; 
          left: 0.8em;
+         background-color: rgba(213, 213, 213, 0.833);
      }
 
  
@@ -50,5 +51,24 @@
      align-items: center;
      justify-content: center;
      cursor: pointer;
-     
+
+ }
+ .filtradoformulario button{
+     width: 100%;
+     padding: 0.4em;
+     border-radius: 0.5em;
+     margin-top: 0.4em;
+     margin-bottom: 0.2em;
+     font-size: 14px;
+     margin-left: -2em;
+     display: block;
+     &:hover{
+         background-color: rgba(213, 213, 213, 0.833);
+         color: rgb(2, 2, 2);
+       
+         opacity: 1;
+         transition: opacity 2s ease-in-out, left 1s ease-in-out; 
+         left: 0.8em;
+         box-shadow: 2px 2px 1px 1px red;
+     }
  }

@@ -6,3 +6,16 @@
     padding: 2em;
     width: 30%;
 }
+.reservation-form input{
+    background-color: aqua;
+    width: 100%;
+    padding: 0.8em;
+    position: relative;
+    left: -1.2em;
+}
+.reservation-form span{
+    color: red;
+    text-align: center;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}

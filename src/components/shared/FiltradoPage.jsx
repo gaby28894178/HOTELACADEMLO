@@ -12,18 +12,21 @@ function FiltradoPage() {
           <span>Buscar Por Nombre</span>
           <input type="text" placeholder="Buscar Por nombre" />
         </label>
+            <button>Busca</button>
         </dir>
         <dir>
         <label htmlFor="">
           <span>Buscar Por Pais</span>
           <input type="text" placeholder="Buscar Por nombre" />
         </label>
+            <button>Busca</button>
         </dir>
         <dir>
         <label htmlFor="">
           <span>Buscar Por Dir..</span>
           <input type="text" placeholder="Buscar Por nombre" />
         </label>
+            <button>Busca</button>
         </dir>
 
       </form>
