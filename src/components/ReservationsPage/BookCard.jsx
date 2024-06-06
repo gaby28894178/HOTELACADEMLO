@@ -1,12 +1,18 @@
 import React from 'react';
 import './style/BookCard.css'
 
-const BookCard = ({ book }) => {
+const BookCard = ({ book, deleteReservation }) => {
   const inicialDate = new Date(book.checkIn);
   const finalDate = new Date(book.checkOut);
 
   // Cálculo de los días de reserva
   const reservationDays = Math.ceil((finalDate - inicialDate) / (1000 * 60 * 60 * 24));
+
+const handleSubmit=()=>{
+  const url = `https://hotels-api.academlo.tech/bookings/${book.id}`
+  deleteReservation (url,book.id, true)
+}
+
  
   return (
     <section className='section-book'>
@@ -20,7 +26,7 @@ const BookCard = ({ book }) => {
         <li><span>Reservations Days: </span> {reservationDays}</li>
         <li><span>Subtotal Price: </span> {book.subtotalPrice}</li>
       </ul>
-      <button><i className='bx bx-trash'></i> </button>
+      <button onClick={handleSubmit}><i className='bx bx-trash'></i> </button>
     </section>
   );
 }

@@ -6,7 +6,7 @@ import './style/Reservation.css'
 
 const ReservationPage = () => {
   
-    const [reservations, getReservations] =   userCrud()
+    const [reservations, getReservations,,deleteReservation] =   userCrud()
     
     useEffect(()=>{
         const url =`https://hotels-api.academlo.tech/bookings`
@@ -22,6 +22,7 @@ const ReservationPage = () => {
                         <BookCard
                             key={book.id}
                             book={book}
+                            deleteReservation={deleteReservation}
                         />
                     ))
                 }

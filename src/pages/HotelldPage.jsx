@@ -5,6 +5,7 @@ import './style/HotelIdPage.css'
 import OtherHotels from '../components/HotelIdPage/OtherHotels'
 import MapHotel from '../components/HotelIdPage/MapHotel'
 import FormReservations from '../components/HotelIdPage/FormReservations'
+import SliderImg from '../components/HomePage/SliderImg'
 
 const HotelldPage = () => {
 
@@ -22,7 +23,7 @@ useEffect(()=>{
 
    <article className='info-section'>
     <h2>{hotel?.name}</h2>
-    <div>
+    <div >
       <i></i>
       <i></i>
       <i></i>
@@ -32,7 +33,11 @@ useEffect(()=>{
       <span></span>
     </div>
     <div>
-      <img src={hotel?.images[0].url} />
+      {/* <img src={hotel?.images[0].url} />
+       */}
+       <SliderImg 
+        hotel={hotel}
+       />
       {
         hotel &&(
 

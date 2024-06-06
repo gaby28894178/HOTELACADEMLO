@@ -33,12 +33,11 @@ const posApi =(url, data, withToken)=>{
 
 // DELET
 
-const deleteApi =(url,withToken)=>{
-    axios.delete(url,withToken? getConfigToken():{})
-    .then(res => {
-        
-        const id = url.split('/').at(-1)
-        setResponse(response.filtet( e => id!==e.id))
+const deleteApi =(url, id,withToken)=>{
+    axios.delete(url, withToken ?  getConfigToken():{})
+    .then(res => {        
+        // const id = url.split('/').at(-1)
+        setResponse(response.filter( e => id !== e.id))
     })
     .catch(err =>console.log(err))
 
