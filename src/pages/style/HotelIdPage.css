@@ -1,14 +1,14 @@
 .info-section{
     background-color: rgb(224, 224, 226);
     
-}
+    }
 .con{
     background-color: rgb(237, 230, 230);
     width: 50%;
-   
-
     
-}
+    
+    
+    }
 .con2{
     background-color: rgb(96, 55, 5);
     width: 45%;
@@ -21,18 +21,22 @@
     background-color: black;
 }
 .mapa{
-    width: 65%;
+    width: 52%;
     height: 13%;
+    max-width: 100%;
     position: relative;
     top: -16em;
-    left: 31em;
+    left: 38em;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid red;
-    overflow: hidden  ;
-}
+    overflow: hidden;
+    object-fit: cover;
+    }
 .mapa2{
-    width: 12%;
-    font-size: 2em;
+    width: 100%;
+    /* font-size: 2em; */
+    overflow: hidden;
+    object-fit: cover;
 }
