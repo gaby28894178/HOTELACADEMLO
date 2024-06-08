@@ -1,8 +1,9 @@
 .info-section{
     background-color: rgb(224, 224, 226);
+    
 }
 .con{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(237, 230, 230);
     width: 50%;
    
 
@@ -18,4 +19,15 @@
 }
 .adr{
     background-color: black;
+}
+.mapa{
+    width: 20em;
+    height: 40px;
+    position: relative;
+    top: -18em;
+    left: 32em;
+}
+.mapa2{
+    width: 12%;
+    font-size: 2em;
 }

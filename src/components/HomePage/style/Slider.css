@@ -44,7 +44,7 @@
     height: 22em;
     max-width: 35em;
     overflow: hidden ;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
   }
   
   .slider-movible {

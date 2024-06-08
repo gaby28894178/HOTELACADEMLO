@@ -30,12 +30,12 @@ useEffect(()=>{
         hotel={hotel}
         />
         </div>
-      <div>
+      <div className='mapa'>
 
-      {/* {
+      {
         hotel &&(
           
-          <MapHotel
+          <MapHotel className='mapa2'
           lat={hotel?.lat}
           lon={hotel?.lon}
           />
@@ -43,7 +43,7 @@ useEffect(()=>{
           
         )
        
-      } */}
+      }
       </div>
     </div>
     <div className='con2'>
