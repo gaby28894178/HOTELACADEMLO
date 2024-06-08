@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import userAuth from '../hooks/userAuth'
-import './style/Login.css'
+import estilo from './style/Login.module.css'
 
 
 const LoginPage = () => {
@@ -21,9 +21,9 @@ const LoginPage = () => {
 
   return (
     <div>
-      <form className='login-form-container' onSubmit={handleSubmit(submit)}>
+      <form className={estilo.for} onSubmit={handleSubmit(submit)}>
       <i className='bx bxs-user-circle login-avatar'></i>
-       <h2 className='login-title' >titulo registro</h2>
+       <h2 className='estilo.title' >Titulo Registro</h2>
         <div>
             <label>
             <span> Email</span>

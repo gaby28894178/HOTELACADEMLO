@@ -2,7 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import userAuth from '../hooks/userAuth'
 import './style/HotelIdPage.css'
-import './style/Register.css'
+import style from'./style/Register.module.css'
 
 const RegisterPage = () => {
 
@@ -27,8 +27,8 @@ const submit = data =>{
 }
 
   return (
-  <article className='register-article'>
-    <form  className='register-form'  onSubmit={handleSubmit(submit)}>
+  <article className={style.article}>
+    <form  className={style.form}  onSubmit={handleSubmit(submit)}>
     <i className='bx bxs-user-circle register-avatar'></i>
         <h2>Register</h2>
         <div>

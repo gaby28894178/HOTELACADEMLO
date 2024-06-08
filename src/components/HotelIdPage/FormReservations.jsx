@@ -33,7 +33,7 @@ const submit = (data) =>{
     <label>
     <span>FIN </span>
     <input {...register('checkOut')}  type="date" /></label>
-    <button>Resere a Roon</button>
+    <button className='btn-reserver'>Resere a Roon</button>
    </form>
   )
 }

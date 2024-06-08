@@ -8,23 +8,43 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0em;
+    justify-content: center;
+    
 }
-img{
+/* img{
     width: 100%;
-}
+} */
 .slider-interior{
     width: 100%;
-    max-width: 30em;
+    max-width: 35em;
     aspect-ratio: 1.6;
-    
+    background-color: rgb(116, 109, 109);    
 }
 .slider-movible{
  display: flex;
  flex-direction: row;
  margin: 1em;
- padding: -1em;
+ padding: 1em;
+ margin-left: 1em;
  border-left: 1em;
  border-right: 1em;
  border-top: 1em;
  border-bottom: 1em;
+ width: 800%;
+ transform: translateX(calc((-0/7)*100%));
+ transition:transform 500ms ease;
+ background-color: rgba(2, 42, 43, 0.83);
+ 
+}
+.slider-img-container{
+    width: 100%;
+    height: 80%;
+    padding: 0.8em;
+    aspect-ratio: 2;
+
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

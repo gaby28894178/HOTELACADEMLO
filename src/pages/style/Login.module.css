@@ -1,0 +1,49 @@
+.for{
+    background-color: rgb(169, 169, 169);
+    width: 15em;
+    position: absolute;
+    top: 12em;
+    left: 15em;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 4px 1px rgb(221, 23, 9);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px  rgb(108, 117, 109);
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.for span {
+    color: red;
+    margin-left: 2.5em;
+}
+.form button , label {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    margin-left: -1em;
+    margin-right: auto;
+}
+
+.for button{
+    padding: 1.2em;
+ border-radius: 0.3em;
+ box-shadow:  1px 1px 1px 1px red;
+ &:hover{
+     background-color: rgb(242, 142, 142);
+     box-shadow:  1px 1px 1px 1px rgb(13, 13, 13);
+     color: rgb(0, 0, 0);
+     }
+}
+.for i{
+    color: #000;
+    font-size: 3em;
+}
